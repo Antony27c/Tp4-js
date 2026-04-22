@@ -1,0 +1,75 @@
+#form-tareas {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+#inputTarea {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#inputTarea:focus {
+    outline: none;
+    border-color: #9c1bcf;
+}
+
+#form-tareas button {
+    padding: 10px 20px;
+    background-color: #9c1bcf;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-tareas button:hover {
+    background-color: #2980b9;
+}
+
+#contador {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9c1bcf;
+    padding: 8px 12px;
+    background-color: #eaf4fc;
+    border-left: 4px solid #9c1bcf;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+li.completada {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+li button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #c0392b;
+}
