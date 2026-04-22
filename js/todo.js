@@ -1,6 +1,7 @@
 const form = document.getElementById('form-tareas');
 const input = document.getElementById('inputTarea');
 const lista = document.getElementById('lista-tareas');
+const contador = document.getElementById('contador');
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
@@ -32,4 +33,8 @@ function agregarTarea(texto) {
     lista.appendChild(li);
 
     actualizarContador();
+}
+function actualizarContador() {
+    const pendientes = lista.querySelectorAll('li:not(.completada').length;
+    contador.textContent = 'Tareas pendientes: ' + pendientes;
 }
