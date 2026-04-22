@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+.filtros { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; }
+.tarjetas { display: flex; flex-wrap: wrap; gap: 15px; }
+.tarjeta { border: 1px solid #ccc; padding: 15px; border-radius: 8px; width: 200px; }
+.tarjeta h3 { margin: 0 0 10px; }
+.sin-stock { opacity: 0.4; }
