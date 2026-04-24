@@ -137,6 +137,43 @@ li button:hover {
     background-color: var(--color-peligro-oscuro);
 }
 
+li .btn-completar {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin-right: 6px;
+    transition: var(--transicion);
+}
+
+li .btn-completar:hover {
+    background-color: #27ae60;
+}
+
+li button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.acciones {
+    display: flex;
+    gap: 6px;
+}
+
+#contador-completadas {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2ecc71;
+    padding: 8px 12px;
+    background-color: #eafaf1;
+    border-left: 4px solid #2ecc71;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
 #contenedor-pokemon {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -249,7 +286,6 @@ nav a:hover {
     padding-left: 10px;
 }
 
-/* ===== MENU INDEX ===== */
 #menu {
     display: flex;
     gap: 20px;
