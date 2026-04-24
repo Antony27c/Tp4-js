@@ -311,3 +311,17 @@ nav a:hover {
     display: block;
     margin-bottom: 8px;
 }
+
+.pokedex-titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffcb05;
+    text-shadow: 
+        3px 3px 0px #2a75bb,
+        -1px -1px 0px #2a75bb,
+        1px -1px 0px #2a75bb,
+        -1px 1px 0px #2a75bb;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
