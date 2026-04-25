@@ -44,6 +44,7 @@ Sistema interactivo de filtrado con un array de 8 productos. Permite filtrar por
 - Checkbox para mostrar solo productos en stock
 - Búsqueda por nombre en tiempo real con `addEventListener("input")`
 - Renderizado con `.map()` + `.innerHTML`
+- Imágenes por producto
 
 ---
 
@@ -104,21 +105,30 @@ O accedé directamente al deploy: [https://antony27c.github.io/Tp4-js/](https://
 
 ```
 Tp4-js/
+├── index.html
 ├── api-demo.html
+├── productos.html
+├── todo.html
 ├── css/
 │   └── app.css
-├── index.html
 ├── js/
-│   ├── api-demo.js
 │   ├── ejercicios.js
 │   ├── productos.js
+│   ├── api-demo.js
 │   └── todo.js
-├── productos.html
+├── productos/
+│   ├── almohada.png
+│   ├── auriculares.png
+│   ├── celular.png
+│   ├── lampara.png
+│   ├── notebook.png
+│   ├── pantalon.png
+│   ├── remera.png
+│   └── silla.png
+├── README.md
 ├── screenshots/
 │   ├── index.png
 │   ├── pokedex.png
 │   ├── productos.png
-│   └── todo.png
-└── todo.html
-└──  README.md
+└── └── todo.png
 ```

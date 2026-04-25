@@ -1,12 +1,12 @@
 const productos = [
-    {id: 1, nombre: "NoteBook", precio: 900, categoria: "electronica", enStock: true},
-    {id: 2, nombre: "Auriculares", precio: 150, categoria: "electronica", enStock: false},
-    {id: 3, nombre: "Remera", precio: 30, categoria: "ropa", enStock: true},
-    {id: 4, nombre: "Pantalón", precio: 60, categoria: "ropa", enStock: true},
-    {id: 5, nombre: "Lámpara", precio: 80, categoria: "hogar", enStock: false},
-    {id: 6, nombre: "Silla", precio: 200, categoria: "hogar", enStock: true},
-    {id: 7, nombre: "Celular", precio: 700, categoria: "electronica", enStock: true},
-    {id: 8, nombre: "Almohada", precio: 40, categoria: "hogar", enStock: true}
+    {id: 1, nombre: "NoteBook", precio: 900, categoria: "electronica", enStock: true, imagen: "productos/notebook.png"},
+    {id: 2, nombre: "Auriculares", precio: 150, categoria: "electronica", enStock: false, imagen: "productos/auriculares.png"},
+    {id: 3, nombre: "Remera", precio: 30, categoria: "ropa", enStock: true, imagen: "productos/remera.png"},
+    {id: 4, nombre: "Pantalón", precio: 60, categoria: "ropa", enStock: true, imagen: "productos/pantalon.png"},
+    {id: 5, nombre: "Lámpara", precio: 80, categoria: "hogar", enStock: false, imagen: "productos/lampara.png"},
+    {id: 6, nombre: "Silla", precio: 200, categoria: "hogar", enStock: true, imagen: "productos/silla.png"},
+    {id: 7, nombre: "Celular", precio: 700, categoria: "electronica", enStock: true, imagen: "productos/celular.png"},
+    {id: 8, nombre: "Almohada", precio: 40, categoria: "hogar", enStock: true, imagen: "productos/almohada.png"}
 ];
 
 const contenedor = document.getElementById("contenedor");
@@ -32,6 +32,7 @@ const mostrarProductos = () => {
 
     contenedor.innerHTML = filtrados.map(p => `
         <div class="tarjeta ${p.enStock ? "" : "sin-stock"}">
+            ${p.imagen ? `<img src="${p.imagen}" alt="${p.nombre}">` : ''}
             <h3>${p.nombre}</h3>
             <p>Precio: $${p.precio}</p>
             <p>Categoría: ${p.categoria}</p>

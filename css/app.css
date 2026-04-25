@@ -325,3 +325,10 @@ nav a:hover {
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+
+.tarjeta img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
